@@ -1,0 +1,39 @@
+{
+  "name": "otlp-to-pipelines",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker that receives OpenTelemetry Protocol (OTLP) logs and writes them to Cloudflare Pipelines",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/otlp-to-pipelines.git"
+  },
+  "keywords": [
+    "cloudflare",
+    "cloudflare-workers",
+    "otlp",
+    "opentelemetry",
+    "pipelines",
+    "observability",
+    "logging",
+    "telemetry"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/otlp-to-pipelines/issues"
+  },
+  "homepage": "https://github.com/yourusername/otlp-to-pipelines#readme",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "typescript": "^5.7.2",
+    "wrangler": "^4.45.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

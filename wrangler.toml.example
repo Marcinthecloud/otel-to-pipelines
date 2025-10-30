@@ -1,0 +1,22 @@
+# Cloudflare Worker Configuration
+# Copy this file to wrangler.toml and fill in your values
+
+name = "otlp-to-pipelines"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+
+# Cloudflare Pipelines binding
+# Get your pipeline stream ID by running: wrangler pipelines list
+[[pipelines]]
+binding = "LOGS_PIPELINE"
+pipeline = "YOUR_PIPELINE_STREAM_ID_HERE"
+
+# Optional: Custom route for your worker
+# Uncomment and modify if you want to use a custom domain
+# routes = [
+#   { pattern = "otlp.example.com/*", zone_name = "example.com" }
+# ]
+
+# Optional: Environment variables
+# [vars]
+# ENVIRONMENT = "production"
