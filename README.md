@@ -206,5 +206,5 @@ curl -X POST http://localhost:8787/v1/logs \
 - [Cloudflare Workers Documentation](https://developers.cloudflare.com/workers/)
 - [Cloudflare Pipelines Documentation](https://developers.cloudflare.com/pipelines/)
 - [OpenTelemetry OTLP Specification](https://opentelemetry.io/docs/specs/otlp/)
-- [Troubleshooting Guide](TROUBLESHOOTING.md)
+
 
