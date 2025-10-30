@@ -183,18 +183,6 @@ The Worker takes the OTLP logs and formats it to be compatible with Cloudflare P
 
 See [pipelines-schema.json](pipelines-schema.json) for the full schema.
 
-## 📊 Converting to Microseconds
-
-If you need microsecond precision timestamps (instead of nanoseconds), use the provided SQL transformation:
-
-```bash
-# Create a sink with the microsecond schema
-wrangler pipelines create otlp-logs-sink --schema sink-schema.json
-
-# Apply the transformation
-wrangler pipelines apply transform-to-sink.sql
-```
-
 ### Local Development
 
 ```bash
